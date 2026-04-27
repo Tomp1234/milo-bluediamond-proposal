@@ -1150,7 +1150,7 @@ h3 {
     </div>
 
     <p style="font-size: 0.96rem; color: var(--ink-dim); line-height: 1.65; margin-top: 28px; max-width: 760px;">
-      Short answer: <strong>Snowflake isn't a competitor. It's a data source.</strong> Snowflake Intelligence answers questions about the data inside Snowflake. <strong>Milo gives you a company 360 view</strong> by joining Snowflake to everything else — your spreadsheets, your tool data, other databases, the operational systems that don't and shouldn't live in the warehouse. Six axes follow, ordered by how much each one matters for Blue Diamond specifically.
+      Short answer: <strong>Snowflake isn't a competitor. It's a data source.</strong> Snowflake Intelligence answers questions about the data inside Snowflake. <strong>Milo gives you a company 360 view</strong> by joining Snowflake to everything else — your spreadsheets, your tool data, other databases, the operational systems that don't and shouldn't live in the warehouse. Four axes follow, ordered by how much each one matters for Blue Diamond specifically.
     </p>
 
   </div>
@@ -1163,7 +1163,7 @@ h3 {
     <div class="kicker">Coverage, not competition</div>
     <h2>Snowflake Intelligence covers Snowflake. <span class="em">Milo gives you a company 360 view.</span></h2>
     <p class="lede">
-      Snowflake Intelligence (Cortex Analyst, Cortex Search, Snowflake Copilot) is a credible NL-to-SQL layer over your Snowflake data. We've benchmarked it carefully. The six axes below aren't flaws in Cortex. They're the things that come from Cortex's scope being one source, while Milo's is the whole estate.
+      Snowflake Intelligence (Cortex Analyst, Cortex Search, Snowflake Copilot) is a credible NL-to-SQL layer over your Snowflake data. We've benchmarked it carefully. The four axes below aren't flaws in Cortex. They're the things that come from Cortex's scope being one source, while Milo's is the whole estate.
     </p>
 
     <div class="sf-grid">
@@ -1221,34 +1221,6 @@ h3 {
         </p>
         <div class="sf-callout">
           <strong>For Blue Diamond:</strong> the goal is more questions asked, not fewer. A pricing model that makes finance nervous about more questions is the wrong shape.
-        </div>
-      </div>
-
-      <div class="sf-cell">
-        <div class="sf-cell-num">05 / Multi-turn context</div>
-        <h3>Cortex is one-shot. <span class="em">Milo is a conversation.</span></h3>
-        <p>
-          Cortex Analyst is largely single-turn. Each question is independent. Follow-ups need to re-establish context.
-        </p>
-        <p>
-          Milo holds conversational state across turns and across data domains. "And now compare that to last year" works. So does "drill into Cobham, then show me the staffing on those days, then check the cafe attach rate."
-        </p>
-        <div class="sf-callout">
-          <strong>For Blue Diamond:</strong> real questions are not one-shot. They are an investigation, three or four queries deep, often crossing domains.
-        </div>
-      </div>
-
-      <div class="sf-cell">
-        <div class="sf-cell-num">06 / Action, not just answer</div>
-        <h3>Cortex stops at SQL. <span class="em">Milo can act.</span></h3>
-        <p>
-          Cortex Analyst returns the answer with charts. Useful, but the next move is still manual. Open another tool, send the message, raise the ticket.
-        </p>
-        <p>
-          Milo can post the answer back to a Slack channel, draft an email to the Regional Manager, raise a Jira ticket against a stock issue, or write back to a Google Sheet. Permissioned, audited, optional.
-        </p>
-        <div class="sf-callout">
-          <strong>For Blue Diamond:</strong> the stockout alert is more useful as a draft message to the buyer than as a row in a table.
         </div>
       </div>
 
@@ -1350,8 +1322,8 @@ h3 {
 <section class="band band-white">
   <div class="page">
 
-    <div class="kicker">A real Blue Diamond question</div>
-    <h2>Three queries Cortex Analyst can't answer alone. <span class="em">Milo can.</span></h2>
+    <div class="kicker">Two real Blue Diamond questions</div>
+    <h2>The kind of question that needs <span class="em">every source, not just one.</span></h2>
     <p class="lede">
       Each example below requires a join across systems where at least one is not in Snowflake. Each is the kind of question a Centre Manager or the Trading team actually asks on a Monday.
     </p>
@@ -1445,53 +1417,6 @@ h3 {
           <div class="sv-answer">
             Bedding Geranium at Endsleigh is the priority. Supplier lead time is <span class="stat">3 days</span>. <strong>Order today, lands Thursday, on shelf for the weekend peak.</strong>
             <div class="sv-cite">SAP CAR · sku_velocity &nbsp;|&nbsp; planning_sheet · forecast_may &nbsp;|&nbsp; purchasing · supplier_lead</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="solution">
-      <div>
-        <div class="solution-label">03 / Trustpilot × WooCommerce × MailChimp</div>
-        <h3>"Did the spring restaurant campaign <span class="em">actually move the needle?"</span></h3>
-        <p>
-          A campaign metric that joins MailChimp send/open data, WooCommerce booking conversions, and Trustpilot review velocity, weighted to centres that received the email vs those that didn't.
-        </p>
-        <p>
-          Cortex Analyst can give you whatever subset of these is loaded into Snowflake. Milo gives you all three, weighted, with confidence interval, regardless of where each one lives.
-        </p>
-      </div>
-      <div class="sv">
-        <div class="sv-bar">
-          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
-          <span class="sv-bar-title">milo · campaign-attribution</span>
-        </div>
-        <div class="sv-body">
-          <div class="sv-header">Spring restaurant push · campaign read</div>
-          <div class="sv-question">Did the spring restaurant campaign drive bookings, weather-controlled?</div>
-          <div class="sv-row">
-            <span class="sv-row-label">MailChimp · sends / opens</span>
-            <span class="sv-row-value">214k / 38%</span>
-          </div>
-          <div class="sv-row">
-            <span class="sv-row-label">WooCommerce · booking lift</span>
-            <span class="sv-row-value pos">+18%</span>
-          </div>
-          <div class="sv-row">
-            <span class="sv-row-label">Control centres (no email)</span>
-            <span class="sv-row-value">+4%</span>
-          </div>
-          <div class="sv-row">
-            <span class="sv-row-label">Net incremental lift</span>
-            <span class="sv-row-value pos">+14pts</span>
-          </div>
-          <div class="sv-row">
-            <span class="sv-row-label">Trustpilot · review velocity</span>
-            <span class="sv-row-value pos">+22%</span>
-          </div>
-          <div class="sv-answer">
-            <span class="stat">+14pts</span> incremental booking lift, weather-adjusted. Trustpilot review velocity also up <span class="stat">+22%</span>. <strong>Campaign is the right one to repeat for the summer push.</strong>
-            <div class="sv-cite">MailChimp · campaign_log &nbsp;|&nbsp; WooCommerce · bookings &nbsp;|&nbsp; Trustpilot · review_feed</div>
           </div>
         </div>
       </div>
